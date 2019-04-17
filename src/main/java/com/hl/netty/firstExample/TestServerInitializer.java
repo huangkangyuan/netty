@@ -1,4 +1,4 @@
-package com.hl.netty;
+package com.hl.netty.firstExample;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;

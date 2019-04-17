@@ -1,4 +1,4 @@
-package com.hl.netty;
+package com.hl.netty.firstExample;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -36,6 +36,7 @@ public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObjec
 
                 //返回给客户端
                 ctx.writeAndFlush(response);
+                ctx.channel().close();
             }
         }
     }
