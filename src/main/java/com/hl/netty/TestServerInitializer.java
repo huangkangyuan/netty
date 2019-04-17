@@ -8,7 +8,7 @@ import io.netty.handler.codec.http.HttpServerCodec;
 public class TestServerInitializer extends ChannelInitializer<SocketChannel> {
 
     /**
-     * 连接创建后就调用此方法进行初始化
+     * channel创建后就调用此方法进行初始化
      * @param ch
      * @throws Exception
      */

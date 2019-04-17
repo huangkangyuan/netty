@@ -22,6 +22,7 @@ target/
 #gradle ignore
 .gradle/
 build/
+out/
 
 #tmp file
 *.log

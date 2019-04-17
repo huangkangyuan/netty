@@ -11,11 +11,12 @@ public class TestServer {
     public static void main(String[] args) throws InterruptedException {
 
         //不断的接收客户端的连接(不对连接进行处理)
-        EventLoopGroup bossGroup = new NioEventLoopGroup();
+        EventLoopGroup bossGroup = new NioEventLoopGroup();//底层死循环
         //对连接进行处理
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
+        EventLoopGroup workerGroup = new NioEventLoopGroup();//底层死循环
 
         try {
+            //Netty简化服务端启动的类
             ServerBootstrap serverBootstrap = new ServerBootstrap();
             serverBootstrap.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
