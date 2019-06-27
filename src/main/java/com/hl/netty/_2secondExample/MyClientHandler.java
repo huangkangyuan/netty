@@ -1,4 +1,4 @@
-package com.hl.netty.secondExample;
+package com.hl.netty._2secondExample;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 
 public class MyClientHandler extends SimpleChannelInboundHandler<String> {

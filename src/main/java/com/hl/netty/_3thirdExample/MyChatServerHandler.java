@@ -1,4 +1,4 @@
-package com.hl.netty.thirdExample;
+package com.hl.netty._3thirdExample;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
@@ -8,8 +8,6 @@ import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.util.concurrent.GlobalEventExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.UUID;
 
 
 public class MyChatServerHandler extends SimpleChannelInboundHandler<String> {

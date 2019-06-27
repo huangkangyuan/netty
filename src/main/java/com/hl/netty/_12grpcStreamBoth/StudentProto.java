@@ -57,7 +57,7 @@ public final class StudentProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\rStudent.proto\022\036com.hl.netty._12grpcStr" +
       "eamBoth\"\035\n\tMyRequest\022\020\n\010username\030\001 \001(\t\"\036" +
       "\n\nMyResponse\022\020\n\010realname\030\002 \001(\t\"\035\n\016Studen" +
@@ -67,21 +67,21 @@ public final class StudentProto {
       "nse\030\001 \003(\0132/.com.hl.netty._12grpcStreamBo" +
       "th.StudentResponse\"%\n\rStreamRequest\022\024\n\014r" +
       "equest_info\030\001 \001(\t\"\'\n\016StreamResponse\022\025\n\rr" +
-      "esponse_info\030\001 \001(\t2\361\003\n\016StudentService\022p\n",
-      "\025GetRealNameByUserName\022).com.hl.netty._1" +
+      "esponse_info\030\001 \001(\t2\357\003\n\016StudentService\022p\n",
+      "\025GetRealNameByUsername\022).com.hl.netty._1" +
       "2grpcStreamBoth.MyRequest\032*.com.hl.netty" +
       "._12grpcStreamBoth.MyResponse\"\000\022w\n\020GetSt" +
       "udentsByAge\022..com.hl.netty._12grpcStream" +
       "Both.StudentRequest\032/.com.hl.netty._12gr" +
-      "pcStreamBoth.StudentResponse\"\0000\001\022\204\001\n\027Get" +
+      "pcStreamBoth.StudentResponse\"\0000\001\022\202\001\n\027Get" +
       "StudentsWrapperByAge\022..com.hl.netty._12g" +
       "rpcStreamBoth.StudentRequest\0323.com.hl.ne" +
       "tty._12grpcStreamBoth.StudentResponseLis" +
-      "t\"\000(\0010\001\022m\n\006ByTalk\022-.com.hl.netty._12grpc",
-      "StreamBoth.StreamRequest\032..com.hl.netty." +
-      "_12grpcStreamBoth.StreamResponse\"\000(\0010\001B0" +
-      "\n\036com.hl.netty._12grpcStreamBothB\014Studen" +
-      "tProtoP\001b\006proto3"
+      "t\"\000(\001\022m\n\006ByTalk\022-.com.hl.netty._12grpcSt",
+      "reamBoth.StreamRequest\032..com.hl.netty._1" +
+      "2grpcStreamBoth.StreamResponse\"\000(\0010\001B0\n\036" +
+      "com.hl.netty._12grpcStreamBothB\014StudentP" +
+      "rotoP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -100,43 +100,43 @@ public final class StudentProto {
     internal_static_com_hl_netty__12grpcStreamBoth_MyRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_hl_netty__12grpcStreamBoth_MyRequest_descriptor,
-        new String[] { "Username", });
+        new java.lang.String[] { "Username", });
     internal_static_com_hl_netty__12grpcStreamBoth_MyResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_com_hl_netty__12grpcStreamBoth_MyResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_hl_netty__12grpcStreamBoth_MyResponse_descriptor,
-        new String[] { "Realname", });
+        new java.lang.String[] { "Realname", });
     internal_static_com_hl_netty__12grpcStreamBoth_StudentRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_com_hl_netty__12grpcStreamBoth_StudentRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_hl_netty__12grpcStreamBoth_StudentRequest_descriptor,
-        new String[] { "Age", });
+        new java.lang.String[] { "Age", });
     internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_descriptor,
-        new String[] { "Name", "Age", "City", });
+        new java.lang.String[] { "Name", "Age", "City", });
     internal_static_com_hl_netty__12grpcStreamBoth_StudentResponseList_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_com_hl_netty__12grpcStreamBoth_StudentResponseList_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_hl_netty__12grpcStreamBoth_StudentResponseList_descriptor,
-        new String[] { "StudentResponse", });
+        new java.lang.String[] { "StudentResponse", });
     internal_static_com_hl_netty__12grpcStreamBoth_StreamRequest_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_com_hl_netty__12grpcStreamBoth_StreamRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_hl_netty__12grpcStreamBoth_StreamRequest_descriptor,
-        new String[] { "RequestInfo", });
+        new java.lang.String[] { "RequestInfo", });
     internal_static_com_hl_netty__12grpcStreamBoth_StreamResponse_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_com_hl_netty__12grpcStreamBoth_StreamResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_hl_netty__12grpcStreamBoth_StreamResponse_descriptor,
-        new String[] { "ResponseInfo", });
+        new java.lang.String[] { "ResponseInfo", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

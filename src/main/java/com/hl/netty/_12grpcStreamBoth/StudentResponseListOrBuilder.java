@@ -10,12 +10,12 @@ public interface StudentResponseListOrBuilder extends
   /**
    * <code>repeated .com.hl.netty._12grpcStreamBoth.StudentResponse studentResponse = 1;</code>
    */
-  java.util.List<StudentResponse>
+  java.util.List<com.hl.netty._12grpcStreamBoth.StudentResponse> 
       getStudentResponseList();
   /**
    * <code>repeated .com.hl.netty._12grpcStreamBoth.StudentResponse studentResponse = 1;</code>
    */
-  StudentResponse getStudentResponse(int index);
+  com.hl.netty._12grpcStreamBoth.StudentResponse getStudentResponse(int index);
   /**
    * <code>repeated .com.hl.netty._12grpcStreamBoth.StudentResponse studentResponse = 1;</code>
    */
@@ -29,5 +29,5 @@ public interface StudentResponseListOrBuilder extends
    * <code>repeated .com.hl.netty._12grpcStreamBoth.StudentResponse studentResponse = 1;</code>
    */
   com.hl.netty._12grpcStreamBoth.StudentResponseOrBuilder getStudentResponseOrBuilder(
-          int index);
+      int index);
 }

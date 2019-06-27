@@ -1,9 +1,7 @@
-package com.hl.netty.thirdExample;
+package com.hl.netty._3thirdExample;
 
-import com.hl.netty.secondExample.MyClientInitializer;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
-import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;

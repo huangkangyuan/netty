@@ -12,25 +12,24 @@ public class OldIOClient {
 
         Socket socket  = new Socket("localhost",8899);
 
-        String fileName = "E:/solr/solr-8.0.0.zip";
+        String fileName = "D:\\java\\消息队列.md";
 
         InputStream inputStream = new FileInputStream(fileName);
 
         DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
 
-        byte[] buffer = new byte[4096];
+        byte[] buffer = new byte[1024];
         long readCount;
         long total = 0;
 
-        long start = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();
 
-        while((readCount=inputStream.read(buffer))>=0){
+        while((readCount = inputStream.read(buffer)) >=0 ){
             total += readCount;
             dataOutputStream.write(buffer);
-            System.out.println(readCount);
         }
 
-        System.out.println("传送的字节数"+total+",时间："+(System.currentTimeMillis()-start));
+        System.out.println("传送的字节数"+total+",时间："+(System.currentTimeMillis()-startTime));
 
         dataOutputStream.close();
         socket.close();

@@ -11,7 +11,7 @@ public class StudentServiceImpl extends StudentServiceGrpc.StudentServiceImplBas
      * @param responseObserver 返回结果给户端的一个对象
      */
     @Override
-    public void getRealNameByUserName(MyRequest request, StreamObserver<MyResponse> responseObserver) {
+    public void getRealNameByUsername(MyRequest request, StreamObserver<MyResponse> responseObserver) {
         System.out.println("接收到客户端的信息" + request.getUsername());
 
         responseObserver.onNext(MyResponse.newBuilder().setRealname("张三").build());//返回给客户端

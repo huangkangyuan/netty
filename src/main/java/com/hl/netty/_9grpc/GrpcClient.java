@@ -8,7 +8,7 @@ public class GrpcClient {
     public static void main(String[] args) {
 
         ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 8899)
-                                                            .usePlaintext(true).build();
+                                                            .usePlaintext().build();
 
         StudentServiceGrpc.StudentServiceBlockingStub blockingStub = StudentServiceGrpc.newBlockingStub(managedChannel);
         MyResponse myResponse = blockingStub.getRealNameByUserName(MyRequest.newBuilder().setUsername("zhangsan").build());

@@ -18,7 +18,7 @@ public class GrpcStreamClientBoth {
 
         StudentServiceGrpc.StudentServiceStub stub = StudentServiceGrpc.newStub(managedChannel);
 
-        MyResponse myResponse = blockingStub.getRealNameByUserName(MyRequest.newBuilder().setUsername("zhangsan").build());
+        MyResponse myResponse = blockingStub.getRealNameByUsername(MyRequest.newBuilder().setUsername("zhangsan").build());
         System.out.println("服务器返回:"+myResponse.getRealname());
 
         System.out.println("=============================");

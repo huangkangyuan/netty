@@ -1,6 +1,5 @@
-package com.hl.netty.thirdExample;
+package com.hl.netty._3thirdExample;
 
-import com.hl.netty.secondExample.MyServerInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;

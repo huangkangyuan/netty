@@ -20,7 +20,7 @@ public  final class StudentResponse extends
     city_ = "";
   }
 
-  @Override
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -46,7 +46,7 @@ public  final class StudentResponse extends
             break;
           }
           case 10: {
-            String s = input.readStringRequireUtf8();
+            java.lang.String s = input.readStringRequireUtf8();
 
             name_ = s;
             break;
@@ -57,7 +57,7 @@ public  final class StudentResponse extends
             break;
           }
           case 26: {
-            String s = input.readStringRequireUtf8();
+            java.lang.String s = input.readStringRequireUtf8();
 
             city_ = s;
             break;
@@ -75,29 +75,29 @@ public  final class StudentResponse extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return StudentProto.internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_descriptor;
+    return com.hl.netty._12grpcStreamBoth.StudentProto.internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_descriptor;
   }
 
-  protected FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return StudentProto.internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_fieldAccessorTable
+    return com.hl.netty._12grpcStreamBoth.StudentProto.internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            StudentResponse.class, Builder.class);
+            com.hl.netty._12grpcStreamBoth.StudentResponse.class, com.hl.netty._12grpcStreamBoth.StudentResponse.Builder.class);
   }
 
   public static final int NAME_FIELD_NUMBER = 1;
-  private volatile Object name_;
+  private volatile java.lang.Object name_;
   /**
    * <code>string name = 1;</code>
    */
-  public String getName() {
-    Object ref = name_;
-    if (ref instanceof String) {
-      return (String) ref;
+  public java.lang.String getName() {
+    java.lang.Object ref = name_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       name_ = s;
       return s;
     }
@@ -107,11 +107,11 @@ public  final class StudentResponse extends
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
-    Object ref = name_;
-    if (ref instanceof String) {
+    java.lang.Object ref = name_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       name_ = b;
       return b;
     } else {
@@ -129,18 +129,18 @@ public  final class StudentResponse extends
   }
 
   public static final int CITY_FIELD_NUMBER = 3;
-  private volatile Object city_;
+  private volatile java.lang.Object city_;
   /**
    * <code>string city = 3;</code>
    */
-  public String getCity() {
-    Object ref = city_;
-    if (ref instanceof String) {
-      return (String) ref;
+  public java.lang.String getCity() {
+    java.lang.Object ref = city_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       city_ = s;
       return s;
     }
@@ -150,11 +150,11 @@ public  final class StudentResponse extends
    */
   public com.google.protobuf.ByteString
       getCityBytes() {
-    Object ref = city_;
-    if (ref instanceof String) {
+    java.lang.Object ref = city_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       city_ = b;
       return b;
     } else {
@@ -205,15 +205,15 @@ public  final class StudentResponse extends
   }
 
   private static final long serialVersionUID = 0L;
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof StudentResponse)) {
+    if (!(obj instanceof com.hl.netty._12grpcStreamBoth.StudentResponse)) {
       return super.equals(obj);
     }
-    StudentResponse other = (StudentResponse) obj;
+    com.hl.netty._12grpcStreamBoth.StudentResponse other = (com.hl.netty._12grpcStreamBoth.StudentResponse) obj;
 
     boolean result = true;
     result = result && getName()
@@ -225,7 +225,7 @@ public  final class StudentResponse extends
     return result;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -243,58 +243,58 @@ public  final class StudentResponse extends
     return hash;
   }
 
-  public static StudentResponse parseFrom(
+  public static com.hl.netty._12grpcStreamBoth.StudentResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static StudentResponse parseFrom(
+  public static com.hl.netty._12grpcStreamBoth.StudentResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static StudentResponse parseFrom(byte[] data)
+  public static com.hl.netty._12grpcStreamBoth.StudentResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static StudentResponse parseFrom(
+  public static com.hl.netty._12grpcStreamBoth.StudentResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static StudentResponse parseFrom(java.io.InputStream input)
+  public static com.hl.netty._12grpcStreamBoth.StudentResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static StudentResponse parseFrom(
+  public static com.hl.netty._12grpcStreamBoth.StudentResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static StudentResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.hl.netty._12grpcStreamBoth.StudentResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static StudentResponse parseDelimitedFrom(
+  public static com.hl.netty._12grpcStreamBoth.StudentResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static StudentResponse parseFrom(
+  public static com.hl.netty._12grpcStreamBoth.StudentResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static StudentResponse parseFrom(
+  public static com.hl.netty._12grpcStreamBoth.StudentResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -306,7 +306,7 @@ public  final class StudentResponse extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(StudentResponse prototype) {
+  public static Builder newBuilder(com.hl.netty._12grpcStreamBoth.StudentResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -314,9 +314,9 @@ public  final class StudentResponse extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -329,14 +329,14 @@ public  final class StudentResponse extends
       com.hl.netty._12grpcStreamBoth.StudentResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return StudentProto.internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_descriptor;
+      return com.hl.netty._12grpcStreamBoth.StudentProto.internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return StudentProto.internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_fieldAccessorTable
+      return com.hl.netty._12grpcStreamBoth.StudentProto.internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              StudentResponse.class, Builder.class);
+              com.hl.netty._12grpcStreamBoth.StudentResponse.class, com.hl.netty._12grpcStreamBoth.StudentResponse.Builder.class);
     }
 
     // Construct using com.hl.netty._12grpcStreamBoth.StudentResponse.newBuilder()
@@ -345,7 +345,7 @@ public  final class StudentResponse extends
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -367,23 +367,23 @@ public  final class StudentResponse extends
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return StudentProto.internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_descriptor;
+      return com.hl.netty._12grpcStreamBoth.StudentProto.internal_static_com_hl_netty__12grpcStreamBoth_StudentResponse_descriptor;
     }
 
-    public StudentResponse getDefaultInstanceForType() {
-      return StudentResponse.getDefaultInstance();
+    public com.hl.netty._12grpcStreamBoth.StudentResponse getDefaultInstanceForType() {
+      return com.hl.netty._12grpcStreamBoth.StudentResponse.getDefaultInstance();
     }
 
-    public StudentResponse build() {
-      StudentResponse result = buildPartial();
+    public com.hl.netty._12grpcStreamBoth.StudentResponse build() {
+      com.hl.netty._12grpcStreamBoth.StudentResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public StudentResponse buildPartial() {
-      StudentResponse result = new StudentResponse(this);
+    public com.hl.netty._12grpcStreamBoth.StudentResponse buildPartial() {
+      com.hl.netty._12grpcStreamBoth.StudentResponse result = new com.hl.netty._12grpcStreamBoth.StudentResponse(this);
       result.name_ = name_;
       result.age_ = age_;
       result.city_ = city_;
@@ -418,16 +418,16 @@ public  final class StudentResponse extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof StudentResponse) {
-        return mergeFrom((StudentResponse)other);
+      if (other instanceof com.hl.netty._12grpcStreamBoth.StudentResponse) {
+        return mergeFrom((com.hl.netty._12grpcStreamBoth.StudentResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(StudentResponse other) {
-      if (other == StudentResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.hl.netty._12grpcStreamBoth.StudentResponse other) {
+      if (other == com.hl.netty._12grpcStreamBoth.StudentResponse.getDefaultInstance()) return this;
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
         onChanged();
@@ -451,11 +451,11 @@ public  final class StudentResponse extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      StudentResponse parsedMessage = null;
+      com.hl.netty._12grpcStreamBoth.StudentResponse parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (StudentResponse) e.getUnfinishedMessage();
+        parsedMessage = (com.hl.netty._12grpcStreamBoth.StudentResponse) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -465,20 +465,20 @@ public  final class StudentResponse extends
       return this;
     }
 
-    private Object name_ = "";
+    private java.lang.Object name_ = "";
     /**
      * <code>string name = 1;</code>
      */
-    public String getName() {
-      Object ref = name_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         name_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -486,11 +486,11 @@ public  final class StudentResponse extends
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -501,7 +501,7 @@ public  final class StudentResponse extends
      * <code>string name = 1;</code>
      */
     public Builder setName(
-        String value) {
+        java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -560,20 +560,20 @@ public  final class StudentResponse extends
       return this;
     }
 
-    private Object city_ = "";
+    private java.lang.Object city_ = "";
     /**
      * <code>string city = 3;</code>
      */
-    public String getCity() {
-      Object ref = city_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getCity() {
+      java.lang.Object ref = city_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         city_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -581,11 +581,11 @@ public  final class StudentResponse extends
      */
     public com.google.protobuf.ByteString
         getCityBytes() {
-      Object ref = city_;
+      java.lang.Object ref = city_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         city_ = b;
         return b;
       } else {
@@ -596,7 +596,7 @@ public  final class StudentResponse extends
      * <code>string city = 3;</code>
      */
     public Builder setCity(
-        String value) {
+        java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -643,12 +643,12 @@ public  final class StudentResponse extends
   }
 
   // @@protoc_insertion_point(class_scope:com.hl.netty._12grpcStreamBoth.StudentResponse)
-  private static final StudentResponse DEFAULT_INSTANCE;
+  private static final com.hl.netty._12grpcStreamBoth.StudentResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new StudentResponse();
+    DEFAULT_INSTANCE = new com.hl.netty._12grpcStreamBoth.StudentResponse();
   }
 
-  public static StudentResponse getDefaultInstance() {
+  public static com.hl.netty._12grpcStreamBoth.StudentResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -666,12 +666,12 @@ public  final class StudentResponse extends
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<StudentResponse> getParserForType() {
     return PARSER;
   }
 
-  public StudentResponse getDefaultInstanceForType() {
+  public com.hl.netty._12grpcStreamBoth.StudentResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

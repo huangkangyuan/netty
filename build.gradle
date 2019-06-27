@@ -1,6 +1,5 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'java'
+apply plugin: 'com.google.protobuf'
 
 group 'com.hl'
 version '1.0-SNAPSHOT'
@@ -14,10 +13,52 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    // https://mvnrepository.com/artifact/io.netty/netty-all
     compile group: 'io.netty', name: 'netty-all', version: '4.1.34.Final'
-
     compile 'org.slf4j:slf4j-api:1.7.14'
     compile 'ch.qos.logback:logback-core:1.1.3'
     compile 'ch.qos.logback:logback-classic:1.1.3'
+    compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.3.1'
+    compile group: 'com.google.protobuf', name: 'protobuf-java-util', version: '3.3.1'
+    compile group: 'org.apache.thrift', name: 'libthrift', version: '0.12.0'
+    compile group: 'io.grpc', name: 'grpc-netty', version: '1.11.0'
+    compile group: 'io.grpc', name: 'grpc-stub', version: '1.11.0'
+    compile group: 'io.grpc', name: 'grpc-protobuf', version: '1.11.0'
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.2.0'
+    }
+    plugins {
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.4.0'
+        }
+    }
+
+    generateProtoTasks.generatedFilesBaseDir = "src"
+    generateProtoTasks {
+        ofSourceSet('main')*.plugins {
+            grpc {
+                setOutputSubDir  'java'
+            }
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.0'
+    }
+}
+
+sourceSets{
+    main{
+        proto{
+            srcDir 'src/main/proto'
+            srcDir 'src/main'
+        }
+    }
 }

@@ -10,7 +10,7 @@ public interface StreamResponseOrBuilder extends
   /**
    * <code>string response_info = 1;</code>
    */
-  String getResponseInfo();
+  java.lang.String getResponseInfo();
   /**
    * <code>string response_info = 1;</code>
    */

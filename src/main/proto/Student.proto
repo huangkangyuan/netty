@@ -7,7 +7,7 @@ option java_outer_classname = "StudentProto";
 option java_multiple_files=true;
 
 service StudentService{
-    rpc GetRealNameByUserName(MyRequest) returns (MyResponse) {}
+    rpc GetRealNameByUsername(MyRequest) returns (MyResponse) {}
     //grpc要求请求和响应都必须是message类型的 thrift和grpc的不同
     rpc GetStudentsByAge(StudentRequest) returns (stream StudentResponse) {}
 

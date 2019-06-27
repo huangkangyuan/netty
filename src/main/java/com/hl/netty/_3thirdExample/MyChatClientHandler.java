@@ -1,11 +1,9 @@
-package com.hl.netty.thirdExample;
+package com.hl.netty._3thirdExample;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.time.LocalDateTime;
 
 
 public class MyChatClientHandler extends SimpleChannelInboundHandler<String> {

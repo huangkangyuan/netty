@@ -1,4 +1,4 @@
-package com.hl.netty.firstExample;
+package com.hl.netty._1firstExample;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -6,10 +6,15 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.*;
 import io.netty.util.CharsetUtil;
+import io.netty.util.NettyRuntime;
+import io.netty.util.internal.SystemPropertyUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.net.URI;
+import java.util.*;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 
 public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
@@ -70,4 +75,14 @@ public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObjec
         logger.info("handler Added");
         super.handlerAdded(ctx);
     }
+
+
+
+        public static void main(String[] args) {
+            int DEFAULT_EVENT_LOOP_THREADS = Math.max(1, SystemPropertyUtil.getInt(
+                    "io.netty.eventLoopThreads", NettyRuntime.availableProcessors() * 2));
+
+            System.out.println(DEFAULT_EVENT_LOOP_THREADS);
+    }
+
 }

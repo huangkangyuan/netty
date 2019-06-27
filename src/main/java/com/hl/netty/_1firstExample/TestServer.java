@@ -1,4 +1,4 @@
-package com.hl.netty.firstExample;
+package com.hl.netty._1firstExample;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -20,13 +20,13 @@ public class TestServer {
             ServerBootstrap serverBootstrap = new ServerBootstrap();
             serverBootstrap.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
-                    .childHandler(new TestServerInitializer());
+                    .childHandler(new TestServerInitializer()); //真正处理的类
 
-            ChannelFuture channelFuture = serverBootstrap.bind(8899).sync();
+            ChannelFuture channelFuture = serverBootstrap.bind(8899).sync();  //阻塞等待
             channelFuture.channel().closeFuture().sync();
 
         } finally {
-            bossGroup.shutdownGracefully();
+            bossGroup.shutdownGracefully();   //优雅关闭
             workerGroup.shutdownGracefully();
         }
     }

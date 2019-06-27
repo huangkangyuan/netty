@@ -1,19 +1,12 @@
-package com.hl.netty._9protobuf;
+package com.hl.netty._9grpc;
 
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
-import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ClientCalls.blockingUnaryCall;
 import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
 import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncServerStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 
 /**
  */
@@ -28,16 +21,16 @@ public final class StudentServiceGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.hl.netty._9protobuf.MyRequest,
-      com.hl.netty._9protobuf.MyResponse> METHOD_GET_REAL_NAME_BY_USER_NAME =
-      io.grpc.MethodDescriptor.<com.hl.netty._9protobuf.MyRequest, com.hl.netty._9protobuf.MyResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<com.hl.netty._9grpc.MyRequest,
+      com.hl.netty._9grpc.MyResponse> METHOD_GET_REAL_NAME_BY_USER_NAME =
+      io.grpc.MethodDescriptor.<com.hl.netty._9grpc.MyRequest, com.hl.netty._9grpc.MyResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
               "com.hl.netty._9grpc.StudentService", "GetRealNameByUserName"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              com.hl.netty._9protobuf.MyRequest.getDefaultInstance()))
+              com.hl.netty._9grpc.MyRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              com.hl.netty._9protobuf.MyResponse.getDefaultInstance()))
+              com.hl.netty._9grpc.MyResponse.getDefaultInstance()))
           .build();
 
   /**
@@ -69,8 +62,8 @@ public final class StudentServiceGrpc {
 
     /**
      */
-    public void getRealNameByUserName(com.hl.netty._9protobuf.MyRequest request,
-        io.grpc.stub.StreamObserver<com.hl.netty._9protobuf.MyResponse> responseObserver) {
+    public void getRealNameByUserName(com.hl.netty._9grpc.MyRequest request,
+        io.grpc.stub.StreamObserver<com.hl.netty._9grpc.MyResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_REAL_NAME_BY_USER_NAME, responseObserver);
     }
 
@@ -80,8 +73,8 @@ public final class StudentServiceGrpc {
             METHOD_GET_REAL_NAME_BY_USER_NAME,
             asyncUnaryCall(
               new MethodHandlers<
-                com.hl.netty._9protobuf.MyRequest,
-                com.hl.netty._9protobuf.MyResponse>(
+                com.hl.netty._9grpc.MyRequest,
+                com.hl.netty._9grpc.MyResponse>(
                   this, METHODID_GET_REAL_NAME_BY_USER_NAME)))
           .build();
     }
@@ -107,8 +100,8 @@ public final class StudentServiceGrpc {
 
     /**
      */
-    public void getRealNameByUserName(com.hl.netty._9protobuf.MyRequest request,
-        io.grpc.stub.StreamObserver<com.hl.netty._9protobuf.MyResponse> responseObserver) {
+    public void getRealNameByUserName(com.hl.netty._9grpc.MyRequest request,
+        io.grpc.stub.StreamObserver<com.hl.netty._9grpc.MyResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_REAL_NAME_BY_USER_NAME, getCallOptions()), request, responseObserver);
     }
@@ -134,7 +127,7 @@ public final class StudentServiceGrpc {
 
     /**
      */
-    public com.hl.netty._9protobuf.MyResponse getRealNameByUserName(com.hl.netty._9protobuf.MyRequest request) {
+    public com.hl.netty._9grpc.MyResponse getRealNameByUserName(com.hl.netty._9grpc.MyRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_REAL_NAME_BY_USER_NAME, getCallOptions(), request);
     }
@@ -160,8 +153,8 @@ public final class StudentServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.hl.netty._9protobuf.MyResponse> getRealNameByUserName(
-        com.hl.netty._9protobuf.MyRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.hl.netty._9grpc.MyResponse> getRealNameByUserName(
+        com.hl.netty._9grpc.MyRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_REAL_NAME_BY_USER_NAME, getCallOptions()), request);
     }
@@ -187,8 +180,8 @@ public final class StudentServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_REAL_NAME_BY_USER_NAME:
-          serviceImpl.getRealNameByUserName((com.hl.netty._9protobuf.MyRequest) request,
-              (io.grpc.stub.StreamObserver<com.hl.netty._9protobuf.MyResponse>) responseObserver);
+          serviceImpl.getRealNameByUserName((com.hl.netty._9grpc.MyRequest) request,
+              (io.grpc.stub.StreamObserver<com.hl.netty._9grpc.MyResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -209,7 +202,7 @@ public final class StudentServiceGrpc {
   private static final class StudentServiceDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
     @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.hl.netty._9protobuf.StudentProto.getDescriptor();
+      return com.hl.netty._9grpc.StudentProto.getDescriptor();
     }
   }
 
